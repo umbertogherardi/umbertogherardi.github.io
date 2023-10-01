@@ -77,7 +77,6 @@ body {
         font-size: 20px;
     }
 }
-
 /* end navbar styles */
 
 /* begin content styles */
@@ -103,17 +102,44 @@ body {
 .content-section:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
 }
+/* end content styles */
 
+/* begin about section styles */
 .photo {
     border-radius: 8px;
-    width: 90%;
+    margin-right: 30px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
 }
-
 
 .about-section {
     display: flex;
     padding-bottom: 30px;
 }
+
+.about-text {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 1515px){
+    .about-section {
+        display: block;
+    }
+
+    .photo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        display: block;
+    }
+
+    .about-text {
+        padding: 30px 20px 0 20px;
+    }
+}
+/* end about section styles */
 
 .experience-section {
     line-height: 25px;
@@ -140,5 +166,11 @@ body {
 .contact-section img {
     height: 40px;
     padding-right: 15px;
+}
+
+.project-photo {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
 }
 /* end content styles*/
