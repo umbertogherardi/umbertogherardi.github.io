@@ -6,8 +6,8 @@ body {
     margin: 0;
 }
 
-.content {
-    padding: 1rem 2rem;
+html {
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -26,6 +26,7 @@ body {
     padding-top: 10px;
     padding-bottom: 0;
     margin: 0;
+    font-size: 40px;
 }
 
 /* begin navbar styles */
@@ -34,6 +35,11 @@ body {
     padding-bottom: 2px;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
 }
 
 .navbar-items {
@@ -69,6 +75,10 @@ body {
     .navbar-items li {
         padding: 5px;
     }
+
+    .content {
+        margin-top: 11rem;
+    }
 }
 
 
@@ -76,13 +86,16 @@ body {
     .navbar-items li {
         font-size: 20px;
     }
+
+    .content {
+        margin-top: 7rem;
+    }
 }
 /* end navbar styles */
 
 /* begin content styles */
 .content {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 10rem 20% 1rem 20%;
 }
 
 @media (max-width: 840px){
@@ -97,6 +110,7 @@ body {
     padding: 5px 30px;
     margin-bottom: 30px;
     border-radius: 8px;
+    scroll-margin-top: 160px;
 }
 
 .content-section:hover {
