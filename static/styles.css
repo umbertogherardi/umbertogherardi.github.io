@@ -47,6 +47,7 @@ html {
     .navbar {
         background-color: #161515;
         color: white;
+        box-shadow: rgb(78, 78, 78) 0px 1px 15px;
     }
 
     .navbar-items li a {
@@ -140,7 +141,6 @@ html {
         margin-top: 11rem;
     }
 }
-
 
 @media (max-width: 520px){
     .navbar-items li {
