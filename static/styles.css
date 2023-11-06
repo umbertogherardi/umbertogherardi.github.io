@@ -240,3 +240,10 @@ html {
     padding-right: 15px;
 }
 /* end contact section styles */
+
+/* begin copyright styles */
+.copyright {
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* end copyright styles */
