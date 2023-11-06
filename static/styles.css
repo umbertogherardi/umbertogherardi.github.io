@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: whitesmoke;
 }
 
 html {
@@ -41,13 +42,12 @@ html {
 }
 
 .dark-theme {
-    background-color: #161515;
+    background-color: #111111;
     color: white;
     
     .navbar {
-        background-color: #161515;
+        background-color: #212121;
         color: white;
-        box-shadow: rgb(78, 78, 78) 0px 1px 15px;
     }
 
     .navbar-items li a {
@@ -64,23 +64,12 @@ html {
 
     .experience-header button {
         background-color: white;
-        color: #161515;
-    }
-
-    .experience-header button:hover {
-        box-shadow: rgba(98, 98, 98, 0.35) 0px 3px 5px;
+        color: black;
     }
 
     .content-section {
-        box-shadow: rgba(98, 98, 98, 0.35) 0px 5px 15px;
-    }
-    
-    .content-section:hover {
-        box-shadow: rgba(98, 98, 98, 0.35) 0px 10px 20px;
-    }
-
-    .photo {
-        box-shadow: rgba(98, 98, 98, 0.35) 0px 3px 5px;
+        background-color: #212121;
+        color: white;
     }
 
     .contact-icon {
@@ -95,7 +84,6 @@ html {
     padding-top: 2px;
     padding-bottom: 2px;
     color: black;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -140,6 +128,10 @@ html {
     .content {
         margin-top: 11rem;
     }
+
+    .toggle-icon {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 520px){
@@ -150,19 +142,12 @@ html {
     .content {
         margin-top: 7rem;
     }
-
-    .toggle-icon {
-        height: 30px;
-        width: 30px;
-        top: 4%;
-        right: 2%
-    }
 }
 /* end navbar styles */
 
 /* begin content styles */
 .content {
-    padding: 10rem 20% 1rem 20%;
+    padding: 10rem 16% 1rem 16%;
 }
 
 @media (max-width: 840px){
@@ -173,15 +158,11 @@ html {
 }
 
 .content-section {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px 30px;
     margin-bottom: 30px;
     border-radius: 8px;
     scroll-margin-top: 160px;
-}
-
-.content-section:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+    background-color: white;
 }
 /* end content styles */
 
