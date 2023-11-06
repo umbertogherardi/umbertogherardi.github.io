@@ -29,6 +29,66 @@ html {
     font-size: 40px;
 }
 
+/* begin dark theme styles */
+.toggle-icon {
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.dark-theme {
+    background-color: #161515;
+    color: white;
+    
+    .navbar {
+        background-color: #161515;
+        color: white;
+    }
+
+    .navbar-items li a {
+        color: white;
+    }
+
+    .navbar-items li a:hover {
+        color: rgb(187, 186, 186);
+    }    
+
+    .toggle-icon {
+        filter: invert(1);
+    }
+
+    .experience-header button {
+        background-color: white;
+        color: #161515;
+    }
+
+    .experience-header button:hover {
+        box-shadow: rgba(98, 98, 98, 0.35) 0px 3px 5px;
+    }
+
+    .content-section {
+        box-shadow: rgba(98, 98, 98, 0.35) 0px 5px 15px;
+    }
+    
+    .content-section:hover {
+        box-shadow: rgba(98, 98, 98, 0.35) 0px 10px 20px;
+    }
+
+    .photo {
+        box-shadow: rgba(98, 98, 98, 0.35) 0px 3px 5px;
+    }
+
+    .contact-icon {
+        filter: invert(1);
+    }
+}
+
+/* end dark theme styles */
+
 /* begin navbar styles */
 .navbar {
     padding-top: 2px;
@@ -89,6 +149,13 @@ html {
 
     .content {
         margin-top: 7rem;
+    }
+
+    .toggle-icon {
+        height: 30px;
+        width: 30px;
+        top: 4%;
+        right: 2%
     }
 }
 /* end navbar styles */
@@ -155,24 +222,34 @@ html {
 }
 /* end about section styles */
 
-.experience-section {
-    line-height: 25px;
-    padding-bottom: 30px;
+/* begin experience section styles */
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.experience-section button {
+.experience-header button {
     background-color: black;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 4px;
+    margin-top: 25px;
 }
 
-.experience-section button:hover {
+.experience-header button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
     cursor: pointer;
 }
 
+.experience-section {
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+/* end experience section styles */
+
+/* begin contact section styles */
 .contact-section {
     padding-bottom: 30px;
 }
@@ -181,10 +258,4 @@ html {
     height: 40px;
     padding-right: 15px;
 }
-
-.project-photo {
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
-}
-/* end content styles*/
+/* end contact section styles */
