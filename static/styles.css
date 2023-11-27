@@ -2,9 +2,13 @@
     font-family: "Poppins", sans-serif;
 }
 
+a {
+    color: rgb(85, 160, 197);
+}
+
 body {
     margin: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(233, 233, 233);
 }
 
 html {
@@ -68,6 +72,10 @@ html {
         background-color: white;
         color: black;
     }
+    
+    #experience button:hover {
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 10px;
+    }
 
     .content-section {
         background-color: #212121;
@@ -91,6 +99,7 @@ html {
     width: 100%;
     overflow: hidden;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
 }
 
 .navbar-items {
@@ -226,7 +235,7 @@ html {
 }
 
 #experience button:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
     cursor: pointer;
 }
 
@@ -241,6 +250,13 @@ html {
 }
 
 /* end experience section styles */
+
+/* begin projects section styles */
+.more-to-come {
+    text-align: center;
+    font-style: italic;
+}
+/* end projects section styles */
 
 /* begin contact section styles */
 .contact-section {
