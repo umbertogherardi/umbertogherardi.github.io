@@ -62,7 +62,7 @@ html {
         filter: invert(1);
     }
 
-    .experience-header button {
+    #experience button {
         background-color: white;
         color: black;
     }
@@ -210,16 +210,17 @@ html {
     justify-content: space-between;
 }
 
-.experience-header button {
+#experience button {
     background-color: black;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 4px;
     margin-top: 25px;
+    width: 100%;
 }
 
-.experience-header button:hover {
+#experience button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px;
     cursor: pointer;
 }
@@ -228,6 +229,12 @@ html {
     line-height: 25px;
     padding-bottom: 30px;
 }
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 /* end experience section styles */
 
 /* begin contact section styles */
